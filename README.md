@@ -37,3 +37,5 @@ Hospedado no GitHub Pages.
  Licença
 Licença MIT.
 
+Link HTTPS para web feito com github space:
+https://kkeevviinn123.github.io/projetoFrontEND/
