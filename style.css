@@ -1,80 +1,89 @@
+/* Estiliza o corpo da página */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(-45deg, #1e3c72, #2a5298, #ee7752, #e73c7e);
-  background-size: 400% 400%;
-  animation: gradientBackground 15s ease infinite;
-  color: #f7f6f6;
-  overflow-x: hidden;
-  position: relative;
+  margin: 0; /* Remove margens padrão do navegador */
+  font-family: Arial, sans-serif; /* Define a fonte */
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #ee7752, #e73c7e); /* Gradiente animado no fundo */
+  background-size: 400% 400%; /* Tamanho do gradiente maior para criar movimento */
+  animation: gradientBackground 15s ease infinite; /* Aplica animação de fundo */
+  color: #f7f6f6; /* Cor do texto */
+  overflow-x: hidden; /* Impede rolagem horizontal */
+  position: relative; /* Necessário para posicionar elementos filhos absolutos */
 }
 
+/* Animação do fundo em movimento */
 @keyframes gradientBackground {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
+/* Estilo do cabeçalho */
 header {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente escuro */
+  padding: 1rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Fica acima dos elementos decorativos */
 }
 
+/* Estilo do campo de busca */
 #searchInput {
-  padding: 0.5rem;
-  width: 60%;
-  margin-top: 1rem;
-  border-radius: 8px;
-  border: none;
+  padding: 0.5rem; /* Espaçamento interno */
+  width: 60%; /* Largura relativa */
+  margin-top: 1rem; /* Distância do topo */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: none; /* Remove a borda padrão */
 }
 
+/* Container principal dos cards de filme */
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex; /* Layout flexível em linha */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  justify-content: center; /* Centraliza os cards */
   padding: 1rem;
   position: relative;
   z-index: 2;
 }
 
+/* Estilo de cada card de filme */
 .movie-card {
-  background-color: rgba(0, 0, 0, 0.6);
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 12px;
-  width: 200px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+  margin: 1rem; /* Espaço externo */
+  padding: 1rem; /* Espaço interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  width: 200px; /* Largura fixa */
   text-align: center;
   z-index: 2;
 }
 
+/* Imagem do filme dentro do card */
 .movie-card img {
-  width: 100%;
-  border-radius: 8px;
+  width: 100%; /* Ocupa toda a largura do card */
+  border-radius: 8px; /* Bordas arredondadas */
 }
 
+/* Link "Ver detalhes" */
 .movie-card a {
-  color: #0af;
-  text-decoration: none;
+  color: #0af; /* Azul claro */
+  text-decoration: none; /* Remove sublinhado */
 }
 
-/* Personagens animados */
+/* Imagens decorativas animadas no fundo */
 .character {
-  position: absolute;
-  width: 80px;
-  opacity: 0.3;
-  z-index: 1;
+  position: absolute; /* Posicionamento absoluto no fundo */
+  width: 80px; /* Tamanho fixo */
+  opacity: 0.3; /* Transparência */
+  z-index: 1; /* Atrás dos demais elementos */
 }
 
+/* Animação da esquerda para a direita */
 @keyframes moveLeftRight {
-  0% { left: -100px; }
-  100% { left: 110%; }
+  0% { left: -100px; } /* Começa fora da tela à esquerda */
+  100% { left: 110%; } /* Sai pela direita */
 }
 
+/* Animação da direita para a esquerda */
 @keyframes moveRightLeft {
-  0% { left: 110%; }
-  100% { left: -100px; }
+  0% { left: 110%; } /* Começa fora da tela à direita */
+  100% { left: -100px; } /* Sai pela esquerda */
 }
-
