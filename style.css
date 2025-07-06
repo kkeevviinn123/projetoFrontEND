@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  color: #f7f6f6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#searchInput {
+  padding: 0.5rem;
+  width: 60%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.movie-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card a {
+  color: #0af;
+  text-decoration: none;
+}
+
+/* Personagens animados */
+.character {
+  position: absolute;
+  width: 80px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+@keyframes moveLeftRight {
+  0% { left: -100px; }
+  100% { left: 110%; }
+}
+
+@keyframes moveRightLeft {
+  0% { left: 110%; }
+  100% { left: -100px; }
+}
+
