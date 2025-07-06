@@ -24,12 +24,7 @@ Filtros: Filtrar por avaliação, ano de lançamento e popularidade.
 
 Exibição de Detalhes: Clique em "Ver detalhes" para acessar informações como sinopse, elenco e trailer.
 
-🖥️ Estrutura de Diretórios
 
-.
-├── index.html
-├── style.css       # Estilos do projeto
-└── script.js       # Lógica JavaScript
 💻 Como Funciona
 API de Filmes: O JavaScript faz requisições para a API do TMDb para buscar filmes em cartaz, com base na popularidade.
 
